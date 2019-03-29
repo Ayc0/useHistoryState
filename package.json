@@ -1,6 +1,6 @@
 {
   "name": "use-history-state",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "description": "`use-history-state` is replacement for `useState` that stores the state within the history state.",
   "keywords": [
