@@ -20,7 +20,9 @@ const Component = () => {
     <Fragment>
       <h1>{name}</h1>
       {names.map(n => (
-        <button key={n} type="button" onClick={() => setName(n)} />
+        <button key={n} type="button" onClick={() => setName(n)}>
+          {n}
+        </button>
       ))}
     </Fragment>
   );
