@@ -14,6 +14,11 @@
   },
   "bugs": "https://github.com/Ayc0/useHistoryState/issues",
   "source": "src/index.ts",
+  "homepage": "https://codepen.io/ayc0/pen/rRXPgO",
+  "author": {
+    "name": "ayc0",
+    "url": "https://stuff.ayc0.pw/"
+  },
   "main": "dist/useHistoryState.js",
   "module": "dist/useHistoryState.es.js",
   "unpkg": "dist/useHistoryState.umd.js",
