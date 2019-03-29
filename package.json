@@ -6,7 +6,8 @@
   "keywords": [
     "React",
     "state",
-    "history"
+    "history",
+    "hooks"
   ],
   "repository": {
     "type": "git",
