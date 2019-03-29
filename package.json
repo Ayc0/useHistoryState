@@ -2,6 +2,17 @@
   "name": "use-history-state",
   "version": "0.1.0",
   "license": "MIT",
+  "description": "`use-history-state` is replacement for `useState` that stores the state within the history state.",
+  "keywords": [
+    "React",
+    "state",
+    "history"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayc0/useHistoryState.git"
+  },
+  "bugs": "https://github.com/Ayc0/useHistoryState/issues",
   "source": "src/index.ts",
   "main": "dist/useHistoryState.js",
   "module": "dist/useHistoryState.es.js",
