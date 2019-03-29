@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback, SetStateAction } from "react";
 
-const extractState = (key: string) => window.history.state && window.history.state[key];
-const containsKey = (key: string) => window.history.state && key in window.history.state;
+const extractState = (key: string, state = window.history.state) => state && state[key];
+const containsKey = (key: string, state = window.history.state) => state && key in state;
 
 type Dispatch<Action> = (newState: Action, replace: boolean) => void;
 
@@ -17,9 +17,9 @@ function useHistoryState<State>(
   );
 
   useEffect(() => {
-    const fn = state => {
-      const newValue = extractState(key);
-      if (containsKey(key) && newValue !== localState) {
+    const fn = ({ state }) => {
+      const newValue = extractState(key, state);
+      if (containsKey(key, state) && newValue !== localState) {
         setLocalState(newValue);
       }
     };
@@ -38,7 +38,6 @@ function useHistoryState<State>(
         newValue = newState;
       }
       setLocalState(newValue);
-      console.log(newValue);
       if (replace) {
         window.history.replaceState({ ...window.history.state, [key]: newValue }, null);
       } else {
