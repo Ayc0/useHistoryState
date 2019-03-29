@@ -1,0 +1,22 @@
+{
+  "name": "use-history-state",
+  "version": "0.1.0",
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/useHistoryState.js",
+  "module": "dist/useHistoryState.es.js",
+  "unpkg": "dist/useHistoryState.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "yarn -s build",
+    "build": "microbundle --globals react=React --name use-history-state",
+    "dev": "microbundle watch --globals react=React --name use-history-state"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.10",
+    "microbundle": "^0.11.0"
+  }
+}
