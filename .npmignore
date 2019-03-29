@@ -1,0 +1,19 @@
+# Mac
+.DS_Store
+
+# Source
+src/
+
+# Cache
+.rts2_cache_*/
+.cache/
+cache/
+
+# Deps
+.pnp.js
+.pnp/
+node_modules/
+
+# Logs
+*.log
+*.logs
